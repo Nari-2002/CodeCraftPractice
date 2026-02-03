@@ -51,26 +51,54 @@ const showCourseDetails = (course) => {
   detailsSubtitle.textContent = course.description;
   topicsContainer.innerHTML = "";
 
-  course.topics.forEach((topic) => {
+  course.topics.forEach((topic, index) => {
     const topicCard = document.createElement("div");
     topicCard.className = "topic-card";
 
     const questionsList = topic.questions
-      .map((question) => `<li>${question}</li>`)
+      .map((q) => `<li>${q}</li>`)
       .join("");
 
     topicCard.innerHTML = `
-      <h4>${topic.name}</h4>
-      <ul>${questionsList}</ul>
+      <div class="topic-header" data-index="${index}">
+        <h4>${topic.name}</h4>
+        <span class="toggle-icon">+</span>
+      </div>
+      <ul class="topic-questions hidden">
+        ${questionsList}
+      </ul>
     `;
 
     topicsContainer.appendChild(topicCard);
   });
 
+  // Accordion behavior
+  const headers = topicsContainer.querySelectorAll(".topic-header");
+
+  headers.forEach((header) => {
+    header.addEventListener("click", () => {
+      const currentQuestions = header.nextElementSibling;
+      const icon = header.querySelector(".toggle-icon");
+
+      // Close all others
+      document.querySelectorAll(".topic-questions").forEach((q) => {
+        if (q !== currentQuestions) q.classList.add("hidden");
+      });
+
+      document.querySelectorAll(".toggle-icon").forEach((i) => {
+        if (i !== icon) i.textContent = "+";
+      });
+
+      // Toggle current
+      currentQuestions.classList.toggle("hidden");
+      icon.textContent = currentQuestions.classList.contains("hidden") ? "+" : "−";
+    });
+  });
+
   coursesSection.classList.add("hidden");
   detailsSection.classList.remove("hidden");
   backButton.classList.remove("hidden");
-  detailsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  detailsSection.scrollIntoView({ behavior: "smooth" });
 };
 
 const showCourses = () => {

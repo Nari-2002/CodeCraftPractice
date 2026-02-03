@@ -271,3 +271,36 @@ body {
     font-size: 2rem;
   }
 }
+.topic-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px;
+  background: #f8f9fa;
+}
+
+.topic-header h4 {
+  margin: 0;
+}
+
+.toggle-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topic-questions {
+  padding: 14px 20px;
+  background: #fff;
+}
+
+.hidden {
+  display: none;
+}
