@@ -1,0 +1,154 @@
+﻿{
+  "courses": [
+    {
+      "name": "Java",
+      "description": "Build solid foundations in Java syntax, OOP, and problem solving.",
+      "topics": [
+        {
+          "name": "Basics",
+          "questions": [
+            "What is the difference between JDK, JRE, and JVM?",
+            "Explain primitive data types in Java.",
+            "How does type casting work in Java?"
+          ]
+        },
+        {
+          "name": "Control Flow",
+          "questions": [
+            "Write a program to check if a number is prime.",
+            "What is the difference between while and do-while loops?",
+            "How does the switch statement work in Java?"
+          ]
+        },
+        {
+          "name": "OOP",
+          "questions": [
+            "Explain encapsulation with a real-world example.",
+            "What is the difference between abstract class and interface?",
+            "How does method overloading differ from overriding?"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "description": "Practice Python essentials, data structures, and clean logic building.",
+      "topics": [
+        {
+          "name": "Basics",
+          "questions": [
+            "What is the difference between a list and a tuple?",
+            "How do you handle user input in Python?",
+            "Explain indentation rules in Python."
+          ]
+        },
+        {
+          "name": "Loops",
+          "questions": [
+            "Write a loop to find the factorial of a number.",
+            "How does list comprehension improve readability?",
+            "What is the purpose of the enumerate() function?"
+          ]
+        },
+        {
+          "name": "Functions",
+          "questions": [
+            "Explain positional vs keyword arguments.",
+            "What is a lambda function used for?",
+            "How do you return multiple values from a function?"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTML",
+      "description": "Strengthen your semantic HTML and layout foundations.",
+      "topics": [
+        {
+          "name": "Structure",
+          "questions": [
+            "Why is semantic HTML important?",
+            "Explain the difference between block and inline elements.",
+            "How do you create a basic form in HTML?"
+          ]
+        },
+        {
+          "name": "Media",
+          "questions": [
+            "How do you embed audio and video in HTML?",
+            "What are the advantages of using the picture element?",
+            "How do you add accessible images?"
+          ]
+        },
+        {
+          "name": "Tables",
+          "questions": [
+            "How do you merge table cells?",
+            "What is the difference between th and td?",
+            "How do you make a table responsive?"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "description": "Practice styling, layouts, and responsive techniques.",
+      "topics": [
+        {
+          "name": "Selectors",
+          "questions": [
+            "What is the difference between class and id selectors?",
+            "How does specificity work in CSS?",
+            "Explain pseudo-classes with examples."
+          ]
+        },
+        {
+          "name": "Layouts",
+          "questions": [
+            "When would you use Flexbox over Grid?",
+            "How do you center an element vertically and horizontally?",
+            "What is the box model in CSS?"
+          ]
+        },
+        {
+          "name": "Responsive",
+          "questions": [
+            "How do media queries work?",
+            "What units are best for responsive typography?",
+            "How do you create a mobile-first layout?"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "description": "Practice core JavaScript, DOM interactions, and logic building.",
+      "topics": [
+        {
+          "name": "Basics",
+          "questions": [
+            "Explain the difference between let, const, and var.",
+            "How does hoisting work in JavaScript?",
+            "What are truthy and falsy values?"
+          ]
+        },
+        {
+          "name": "Arrays & Objects",
+          "questions": [
+            "How do you clone an array or object safely?",
+            "Explain the difference between map, filter, and reduce.",
+            "How would you remove duplicates from an array?"
+          ]
+        },
+        {
+          "name": "DOM",
+          "questions": [
+            "What is event delegation?",
+            "How do you select and update DOM elements?",
+            "Explain the difference between innerText and innerHTML."
+          ]
+        }
+      ]
+    }
+  ]
+}
