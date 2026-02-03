@@ -209,28 +209,10 @@ body {
 
 .topic-card {
   background: var(--card);
-  padding: 20px 22px;
-  border-radius: 20px;
+  border-radius: 18px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-}
-
-.topic-card h4 {
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-.topic-card ul {
-  list-style: none;
-  display: grid;
-  gap: 10px;
-}
-
-.topic-card li {
-  background: var(--bg-accent);
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(20, 90, 90, 0.1);
+  overflow: hidden;
 }
 
 .site-footer {
@@ -271,36 +253,75 @@ body {
     font-size: 2rem;
   }
 }
-.topic-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
 
 .topic-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   cursor: pointer;
-  padding: 14px;
-  background: #f8f9fa;
+  padding: 16px 20px;
+  background: linear-gradient(120deg, #ffffff 0%, #f7f1ea 100%);
+  border-bottom: 1px solid rgba(20, 90, 90, 0.08);
+  transition: background 0.2s ease;
+}
+
+.topic-header:focus-visible {
+  outline: 2px solid rgba(20, 90, 90, 0.35);
+  outline-offset: -2px;
 }
 
 .topic-header h4 {
+  color: var(--primary);
+  font-size: 1.1rem;
   margin: 0;
 }
 
 .toggle-icon {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
+  color: var(--primary);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(20, 90, 90, 0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .topic-questions {
-  padding: 14px 20px;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  padding: 0 20px;
   background: #fff;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
 }
 
-.hidden {
-  display: none;
+.topic-questions.is-open {
+  max-height: 320px;
+  opacity: 1;
+  padding: 16px 20px 20px;
+  overflow-y: auto;
+}
+
+.topic-card li {
+  background: var(--bg-accent);
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(20, 90, 90, 0.1);
+}
+
+.topic-card:hover .topic-header {
+  background: linear-gradient(120deg, #ffffff 0%, #f3e9dd 100%);
+}
+
+.topic-header[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+  background: rgba(20, 90, 90, 0.2);
 }

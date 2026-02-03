@@ -60,11 +60,11 @@ const showCourseDetails = (course) => {
       .join("");
 
     topicCard.innerHTML = `
-      <div class="topic-header" data-index="${index}">
+      <div class="topic-header" data-index="${index}" role="button" tabindex="0" aria-expanded="false">
         <h4>${topic.name}</h4>
         <span class="toggle-icon">+</span>
       </div>
-      <ul class="topic-questions hidden">
+      <ul class="topic-questions">
         ${questionsList}
       </ul>
     `;
@@ -75,23 +75,36 @@ const showCourseDetails = (course) => {
   // Accordion behavior
   const headers = topicsContainer.querySelectorAll(".topic-header");
 
+  const toggleAccordion = (header) => {
+    const currentQuestions = header.nextElementSibling;
+    const icon = header.querySelector(".toggle-icon");
+
+    // Close all others
+    document.querySelectorAll(".topic-questions").forEach((q) => {
+      if (q !== currentQuestions) q.classList.remove("is-open");
+    });
+
+    document.querySelectorAll(".topic-header").forEach((h) => {
+      if (h !== header) h.setAttribute("aria-expanded", "false");
+    });
+
+    document.querySelectorAll(".toggle-icon").forEach((i) => {
+      if (i !== icon) i.textContent = "+";
+    });
+
+    // Toggle current
+    const isOpen = currentQuestions.classList.toggle("is-open");
+    header.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    icon.textContent = isOpen ? "−" : "+";
+  };
+
   headers.forEach((header) => {
-    header.addEventListener("click", () => {
-      const currentQuestions = header.nextElementSibling;
-      const icon = header.querySelector(".toggle-icon");
-
-      // Close all others
-      document.querySelectorAll(".topic-questions").forEach((q) => {
-        if (q !== currentQuestions) q.classList.add("hidden");
-      });
-
-      document.querySelectorAll(".toggle-icon").forEach((i) => {
-        if (i !== icon) i.textContent = "+";
-      });
-
-      // Toggle current
-      currentQuestions.classList.toggle("hidden");
-      icon.textContent = currentQuestions.classList.contains("hidden") ? "+" : "−";
+    header.addEventListener("click", () => toggleAccordion(header));
+    header.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleAccordion(header);
+      }
     });
   });
 
