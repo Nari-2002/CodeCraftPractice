@@ -510,6 +510,42 @@
           ]
         },
         {
+          "name": "Python String Programming Problems",
+          "questions": [
+            "Write a Python program to reverse a given string.",
+            "Write a Python program to check whether a given string is a palindrome.",
+            "Write a Python program to count the occurrences of a specific character in a string.",
+            "Write a Python program to find duplicate characters in a string.",
+            "Write a Python program to remove duplicate characters from a string.",
+            "Write a Python program to check whether two strings are anagrams of each other.",
+            "Write a Python program to find the first non-repeated character in a string.",
+            "Write a Python program to check whether a string contains only digits.",
+            "Write a Python program to count the number of vowels and consonants in a string.",
+            "Write a Python program to check whether one string is a rotation of another string.",
+            "Write a Python program to find the longest word in a given sentence.",
+            "Write a Python program to convert a string into Title Case.",
+            "Write a Python program to find all permutations of a given string.",
+            "Write a Python program to convert a string into an integer without using int().",
+            "Write a Python program to find the frequency of each word in a sentence.",
+            "Write a Python program to convert a string into a character list without using list().",
+            "Write a Python program to remove all non-alphabetic characters from a string.",
+            "Write a Python program to convert lowercase letters to uppercase without using upper().",
+            "Write a Python program to reverse the words in a sentence.",
+            "Write a Python program to check whether two strings are one edit distance apart.",
+            "Write a Python program to implement substring search without using the in keyword.",
+            "Write a Python program to compress a string (for example, aaabb becomes a3b2).",
+            "Write a Python program to find the longest common prefix in a list of strings.",
+            "Write a Python program to check if one string is a substring of another without using built-in methods.",
+            "Write a Python program to print all possible substrings of a string.",
+            "Write a Python program to convert a number into words (for example, 123 → One Hundred Twenty Three).",
+            "Write a Python program to validate an email address format.",
+            "Write a Python program to convert a CamelCase string into snake_case.",
+            "Write a Python program to find the lexicographically smallest string from a list of strings.",
+            "Write a Python program to remove consecutive duplicate words from a sentence."
+          ]
+        },
+
+        {
           "name": "Functions",
           "questions": [
             "Explain positional vs keyword arguments.",
