@@ -1,0 +1,30 @@
+﻿{
+    "name":  "HTML",
+    "description":  "Strengthen your semantic HTML and layout foundations.",
+    "topics":  [
+                   {
+                       "name":  "Structure",
+                       "questions":  [
+                                         "Why is semantic HTML important?",
+                                         "Explain the difference between block and inline elements.",
+                                         "How do you create a basic form in HTML?"
+                                     ]
+                   },
+                   {
+                       "name":  "Media",
+                       "questions":  [
+                                         "How do you embed audio and video in HTML?",
+                                         "What are the advantages of using the picture element?",
+                                         "How do you add accessible images?"
+                                     ]
+                   },
+                   {
+                       "name":  "Tables",
+                       "questions":  [
+                                         "How do you merge table cells?",
+                                         "What is the difference between th and td?",
+                                         "How do you make a table responsive?"
+                                     ]
+                   }
+               ]
+}

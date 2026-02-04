@@ -1,0 +1,30 @@
+﻿{
+    "name":  "JavaScript",
+    "description":  "Practice core JavaScript, DOM interactions, and logic building.",
+    "topics":  [
+                   {
+                       "name":  "Basics",
+                       "questions":  [
+                                         "Explain the difference between let, const, and var.",
+                                         "How does hoisting work in JavaScript?",
+                                         "What are truthy and falsy values?"
+                                     ]
+                   },
+                   {
+                       "name":  "Arrays \u0026 Objects",
+                       "questions":  [
+                                         "How do you clone an array or object safely?",
+                                         "Explain the difference between map, filter, and reduce.",
+                                         "How would you remove duplicates from an array?"
+                                     ]
+                   },
+                   {
+                       "name":  "DOM",
+                       "questions":  [
+                                         "What is event delegation?",
+                                         "How do you select and update DOM elements?",
+                                         "Explain the difference between innerText and innerHTML."
+                                     ]
+                   }
+               ]
+}

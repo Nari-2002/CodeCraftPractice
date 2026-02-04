@@ -123,15 +123,41 @@ const showCourses = () => {
 
 backButton.addEventListener("click", showCourses);
 
-fetch("courses.json")
-  .then((response) => {
+const loadCourses = async () => {
+  try {
+    const manifestResponse = await fetch("courses/manifest.json");
+    if (!manifestResponse.ok) {
+      throw new Error("Failed to load manifest.json");
+    }
+    const manifest = await manifestResponse.json();
+    if (!manifest || !Array.isArray(manifest.files)) {
+      throw new Error("Invalid manifest format");
+    }
+
+    const responses = await Promise.all(
+      manifest.files.map((file) => fetch(`courses/${file}`))
+    );
+
+    responses.forEach((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load a course file");
+      }
+    });
+
+    return Promise.all(responses.map((response) => response.json()));
+  } catch (error) {
+    const response = await fetch("courses.json");
     if (!response.ok) {
       throw new Error("Failed to load courses.json");
     }
-    return response.json();
-  })
-  .then((data) => {
-    coursesData = data.courses;
+    const data = await response.json();
+    return Array.isArray(data.courses) ? data.courses : [];
+  }
+};
+
+loadCourses()
+  .then((courses) => {
+    coursesData = courses;
     renderCourses(coursesData);
     updateStats(coursesData);
   })

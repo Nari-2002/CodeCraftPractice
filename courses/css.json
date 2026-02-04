@@ -1,0 +1,30 @@
+﻿{
+    "name":  "CSS",
+    "description":  "Practice styling, layouts, and responsive techniques.",
+    "topics":  [
+                   {
+                       "name":  "Selectors",
+                       "questions":  [
+                                         "What is the difference between class and id selectors?",
+                                         "How does specificity work in CSS?",
+                                         "Explain pseudo-classes with examples."
+                                     ]
+                   },
+                   {
+                       "name":  "Layouts",
+                       "questions":  [
+                                         "When would you use Flexbox over Grid?",
+                                         "How do you center an element vertically and horizontally?",
+                                         "What is the box model in CSS?"
+                                     ]
+                   },
+                   {
+                       "name":  "Responsive",
+                       "questions":  [
+                                         "How do media queries work?",
+                                         "What units are best for responsive typography?",
+                                         "How do you create a mobile-first layout?"
+                                     ]
+                   }
+               ]
+}
