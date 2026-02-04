@@ -4,6 +4,7 @@
                   "python.json",
                   "html.json",
                   "css.json",
-                  "javascript.json"
+                  "javascript.json",
+                  "leetCode.json"
               ]
 }
