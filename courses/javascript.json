@@ -1,30 +1,126 @@
 ﻿{
-    "name":  "JavaScript",
-    "description":  "Practice core JavaScript, DOM interactions, and logic building.",
-    "topics":  [
-                   {
-                       "name":  "Basics",
-                       "questions":  [
-                                         "Explain the difference between let, const, and var.",
-                                         "How does hoisting work in JavaScript?",
-                                         "What are truthy and falsy values?"
-                                     ]
-                   },
-                   {
-                       "name":  "Arrays \u0026 Objects",
-                       "questions":  [
-                                         "How do you clone an array or object safely?",
-                                         "Explain the difference between map, filter, and reduce.",
-                                         "How would you remove duplicates from an array?"
-                                     ]
-                   },
-                   {
-                       "name":  "DOM",
-                       "questions":  [
-                                         "What is event delegation?",
-                                         "How do you select and update DOM elements?",
-                                         "Explain the difference between innerText and innerHTML."
-                                     ]
-                   }
-               ]
+  "name": "JavaScript",
+  "description": "Hands-on JavaScript coding problem statements covering fundamentals, DOM, async behavior, and real-world use cases.",
+  "topics": [
+    {
+      "name": "JavaScript Basics",
+      "questions": [
+        "Print 'Hello, World!' to the console.",
+        "Take two numbers as input and print their sum.",
+        "Check whether a number is even or odd.",
+        "Find the largest of three numbers.",
+        "Swap two variables without using a third variable."
+      ]
+    },
+    {
+      "name": "Operators & Conditions",
+      "questions": [
+        "Check if a number is positive, negative, or zero.",
+        "Determine pass or fail based on marks.",
+        "Check if a year is a leap year.",
+        "Check whether a character is a vowel or consonant.",
+        "Validate login credentials using if-else."
+      ]
+    },
+    {
+      "name": "Loops",
+      "questions": [
+        "Print numbers from 1 to 10 using a for loop.",
+        "Print numbers from 10 to 1 using a while loop.",
+        "Print all even numbers between 1 and 50.",
+        "Find the factorial of a number.",
+        "Generate the Fibonacci series up to N terms."
+      ]
+    },
+    {
+      "name": "Functions",
+      "questions": [
+        "Create a function to add two numbers.",
+        "Write a function to check whether a number is prime.",
+        "Return multiple values from a function.",
+        "Use an arrow function to calculate the square of a number.",
+        "Create a recursive function to find factorial."
+      ]
+    },
+    {
+      "name": "Arrays",
+      "questions": [
+        "Find the sum of elements in an array.",
+        "Find the largest and smallest elements in an array.",
+        "Remove duplicate elements from an array.",
+        "Reverse an array without using built-in methods.",
+        "Sort an array in ascending order."
+      ]
+    },
+    {
+      "name": "Strings",
+      "questions": [
+        "Reverse a string.",
+        "Check whether a string is a palindrome.",
+        "Count the number of vowels in a string.",
+        "Find the frequency of each character in a string.",
+        "Check if two strings are anagrams."
+      ]
+    },
+    {
+      "name": "Objects",
+      "questions": [
+        "Create an object to store student details.",
+        "Access and update object properties.",
+        "Loop through object keys and values.",
+        "Merge two objects.",
+        "Convert an object into an array of keys and values."
+      ]
+    },
+    {
+      "name": "DOM Manipulation",
+      "questions": [
+        "Change the text of an element using JavaScript.",
+        "Change the background color of a div on button click.",
+        "Create and append a new element to the DOM.",
+        "Remove an element from the DOM.",
+        "Toggle a class on an element."
+      ]
+    },
+    {
+      "name": "Events",
+      "questions": [
+        "Handle a button click event.",
+        "Display input value on keyup event.",
+        "Change an image on mouse hover.",
+        "Create a simple counter using click events.",
+        "Prevent form submission using JavaScript."
+      ]
+    },
+    {
+      "name": "Asynchronous JavaScript",
+      "questions": [
+        "Create a timeout using setTimeout.",
+        "Create an interval using setInterval.",
+        "Fetch data from an API using fetch.",
+        "Handle promises using then and catch.",
+        "Rewrite a promise-based code using async and await."
+      ]
+    },
+    {
+      "name": "Error Handling",
+      "questions": [
+        "Handle errors using try and catch.",
+        "Throw a custom error.",
+        "Validate user input with error handling.",
+        "Handle API errors gracefully.",
+        "Create a fallback message when an error occurs."
+      ]
+    },
+    {
+      "name": "Mini Projects (JavaScript)",
+      "questions": [
+        "Build a calculator using HTML, CSS, and JavaScript.",
+        "Create a to-do list with add and delete functionality.",
+        "Build a quiz application using JavaScript.",
+        "Create a digital clock using JavaScript.",
+        "Build a simple image slider."
+      ]
+    }
+  ]
 }

@@ -1,30 +1,86 @@
 ﻿{
-    "name":  "HTML",
-    "description":  "Strengthen your semantic HTML and layout foundations.",
-    "topics":  [
-                   {
-                       "name":  "Structure",
-                       "questions":  [
-                                         "Why is semantic HTML important?",
-                                         "Explain the difference between block and inline elements.",
-                                         "How do you create a basic form in HTML?"
-                                     ]
-                   },
-                   {
-                       "name":  "Media",
-                       "questions":  [
-                                         "How do you embed audio and video in HTML?",
-                                         "What are the advantages of using the picture element?",
-                                         "How do you add accessible images?"
-                                     ]
-                   },
-                   {
-                       "name":  "Tables",
-                       "questions":  [
-                                         "How do you merge table cells?",
-                                         "What is the difference between th and td?",
-                                         "How do you make a table responsive?"
-                                     ]
-                   }
-               ]
+  "name": "HTML",
+  "description": "Hands-on HTML coding problem statements to strengthen structure, semantics, accessibility, and layout skills.",
+  "topics": [
+    {
+      "name": "Basic Structure",
+      "questions": [
+        "Create a basic HTML5 document with proper doctype, head, and body.",
+        "Build a simple webpage with a header, main section, and footer.",
+        "Create a personal profile page using only semantic HTML tags.",
+        "Design a webpage layout using header, nav, section, article, aside, and footer.",
+        "Create an HTML page that displays a heading hierarchy from h1 to h6 correctly."
+      ]
+    },
+    {
+      "name": "Text & Formatting",
+      "questions": [
+        "Create a webpage demonstrating bold, italic, underline, and emphasized text.",
+        "Build an article page with paragraphs, line breaks, and horizontal rules.",
+        "Display a quotation using blockquote and cite tags.",
+        "Create a page showing ordered, unordered, and description lists.",
+        "Design a FAQ section using headings and paragraphs only."
+      ]
+    },
+    {
+      "name": "Links & Navigation",
+      "questions": [
+        "Create a navigation bar using anchor tags.",
+        "Build a multi-page website with internal links between pages.",
+        "Create external links that open in a new tab.",
+        "Add anchor links to jump to different sections of the same page.",
+        "Create an email and phone link using anchor tags."
+      ]
+    },
+    {
+      "name": "Images & Media",
+      "questions": [
+        "Create an image gallery using img tags.",
+        "Add alt text to images to improve accessibility.",
+        "Embed an audio file with playback controls.",
+        "Embed a video file with autoplay and muted attributes.",
+        "Use the picture element to display different images for different screen sizes."
+      ]
+    },
+    {
+      "name": "Forms",
+      "questions": [
+        "Create a basic contact form with name, email, and message fields.",
+        "Build a registration form using text, password, radio, and checkbox inputs.",
+        "Create a login form with proper labels and placeholders.",
+        "Design a feedback form with textarea and select dropdown.",
+        "Create a form that validates required fields using HTML attributes."
+      ]
+    },
+    {
+      "name": "Tables",
+      "questions": [
+        "Create a student marks table using table, tr, th, and td.",
+        "Merge table cells using rowspan and colspan.",
+        "Build a timetable using an HTML table.",
+        "Create a comparison table with a table header and table footer.",
+        "Make a table accessible using caption, thead, tbody, and tfoot."
+      ]
+    },
+    {
+      "name": "Semantic HTML",
+      "questions": [
+        "Build a blog page using article, section, header, and footer.",
+        "Create a news website layout using semantic tags only.",
+        "Design a product page using figure and figcaption.",
+        "Convert a div-based layout into a semantic HTML layout.",
+        "Create an accessible webpage using proper landmarks and headings."
+      ]
+    },
+    {
+      "name": "Mini Projects (HTML Only)",
+      "questions": [
+        "Build a resume using only HTML.",
+        "Create a simple landing page structure using semantic HTML.",
+        "Design a static portfolio website using HTML only.",
+        "Build a restaurant menu page using lists and tables.",
+        "Create a documentation-style page using headings, sections, and links."
+      ]
+    }
+  ]
 }

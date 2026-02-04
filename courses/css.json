@@ -1,30 +1,116 @@
 ﻿{
-    "name":  "CSS",
-    "description":  "Practice styling, layouts, and responsive techniques.",
-    "topics":  [
-                   {
-                       "name":  "Selectors",
-                       "questions":  [
-                                         "What is the difference between class and id selectors?",
-                                         "How does specificity work in CSS?",
-                                         "Explain pseudo-classes with examples."
-                                     ]
-                   },
-                   {
-                       "name":  "Layouts",
-                       "questions":  [
-                                         "When would you use Flexbox over Grid?",
-                                         "How do you center an element vertically and horizontally?",
-                                         "What is the box model in CSS?"
-                                     ]
-                   },
-                   {
-                       "name":  "Responsive",
-                       "questions":  [
-                                         "How do media queries work?",
-                                         "What units are best for responsive typography?",
-                                         "How do you create a mobile-first layout?"
-                                     ]
-                   }
-               ]
+  "name": "CSS",
+  "description": "Hands-on CSS coding problem statements to master styling, layouts, responsiveness, and modern UI techniques.",
+  "topics": [
+    {
+      "name": "CSS Basics",
+      "questions": [
+        "Apply colors to text using named colors, HEX, RGB, and HSL.",
+        "Style headings and paragraphs using font-family, font-size, and font-weight.",
+        "Create a webpage demonstrating margin, padding, and border differences.",
+        "Style a button with background color, border-radius, and hover effect.",
+        "Apply text alignment and text decoration styles to content."
+      ]
+    },
+    {
+      "name": "Selectors",
+      "questions": [
+        "Style elements using class selectors.",
+        "Style elements using id selectors.",
+        "Use descendant and child selectors to style nested elements.",
+        "Apply styles using attribute selectors.",
+        "Demonstrate pseudo-classes like :hover, :focus, and :active."
+      ]
+    },
+    {
+      "name": "Box Model",
+      "questions": [
+        "Create two boxes showing the difference between content-box and border-box.",
+        "Design a card layout using margin, padding, and border.",
+        "Demonstrate overflow hidden, scroll, and auto.",
+        "Create a layout showing collapsed margins.",
+        "Style an element with box-shadow and outline."
+      ]
+    },
+    {
+      "name": "Display & Position",
+      "questions": [
+        "Demonstrate block, inline, and inline-block elements.",
+        "Hide and show elements using display and visibility.",
+        "Position an element using relative and absolute positioning.",
+        "Create a fixed header that stays on top while scrolling.",
+        "Build a sticky navigation bar."
+      ]
+    },
+    {
+      "name": "Flexbox",
+      "questions": [
+        "Create a horizontal navigation bar using Flexbox.",
+        "Center a div both horizontally and vertically using Flexbox.",
+        "Build a responsive card layout using flex-wrap.",
+        "Reorder elements using the order property.",
+        "Create equal-height columns using Flexbox."
+      ]
+    },
+    {
+      "name": "CSS Grid",
+      "questions": [
+        "Create a basic grid layout with rows and columns.",
+        "Build a page layout using CSS Grid (header, sidebar, content, footer).",
+        "Create a photo gallery using grid-gap.",
+        "Span rows and columns using grid-row and grid-column.",
+        "Make a responsive grid using auto-fit and minmax."
+      ]
+    },
+    {
+      "name": "Responsive Design",
+      "questions": [
+        "Make a webpage responsive using media queries.",
+        "Change layout styles for mobile, tablet, and desktop screens.",
+        "Hide elements on small screens using media queries.",
+        "Create a responsive navigation menu.",
+        "Build a mobile-first responsive card layout."
+      ]
+    },
+    {
+      "name": "Typography",
+      "questions": [
+        "Style text using line-height and letter-spacing.",
+        "Create a responsive typography system using rem units.",
+        "Apply custom Google Fonts to a webpage.",
+        "Demonstrate text overflow using ellipsis.",
+        "Create a readable article layout using typography rules."
+      ]
+    },
+    {
+      "name": "Animations & Transitions",
+      "questions": [
+        "Add a hover transition effect to a button.",
+        "Create a loading spinner using CSS animations.",
+        "Animate a box moving from left to right using keyframes.",
+        "Create a pulsing animation effect.",
+        "Build a simple dropdown animation using CSS only."
+      ]
+    },
+    {
+      "name": "Advanced CSS",
+      "questions": [
+        "Create a dark mode theme using CSS variables.",
+        "Build a neumorphism-style card using box-shadow.",
+        "Design a glassmorphism UI card using backdrop-filter.",
+        "Create a custom checkbox and radio button using CSS.",
+        "Implement a CSS-only tooltip."
+      ]
+    },
+    {
+      "name": "Mini Projects (CSS Focused)",
+      "questions": [
+        "Style a complete landing page using HTML and CSS.",
+        "Build a responsive pricing table.",
+        "Create a dashboard layout using Grid and Flexbox.",
+        "Design a profile card with hover effects.",
+        "Build a responsive image gallery with animations."
+      ]
+    }
+  ]
 }
